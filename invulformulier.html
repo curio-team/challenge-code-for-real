@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Invulformulier project voor Code for Real. Beschrijf de opdracht en hoe je aan de technische minimumeisen gaat voldoen.">
+  <title>Invulformulier project — Challenge: Code For Real</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="form-page">
+  <header class="topbar">
+    <div class="shell navrow">
+      <a href="index.html" class="brand">&lt;CODE <span>FOR REAL</span> /&gt;</a>
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a href="index.html#missie">Missie</a>
+        <a href="index.html#zoeken">Opdrachtgever zoeken</a>
+        <a href="index.html#pitch">Projectvoorstel</a>
+        <a href="index.html#bouwen">Ontwikkeling</a>
+        <a href="index.html#oplevering">Oplevering</a>
+        <a href="invulformulier.html" aria-current="page">Invulformulier</a>
+        <a class="nav-cta" href="index.html#faq">FAQ ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="shell">
+      <div class="eyebrow"><span class="dot"></span> Software Developer · Projectvoorstel</div>
+      <h1 class="form-title">Invulformulier project.</h1>
+      <p class="lead">Heb je een opdracht gevonden? Vul dan dit formulier in, sla het op of print het uit en bespreek het met je projectdocent!</p>
+      <div class="hero-actions">
+        <button class="btn primary" type="submit" form="project-form">Opslaan</button>
+        <button class="btn" type="button" data-print-form>⎙ Print formulier</button>
+        <a class="btn" href="#voorbeelden">Bekijk twee voorbeelden</a>
+        <a class="btn" href="index.html#bouwen">Terug naar de briefing</a>
+      </div>
+      <p class="save-status" id="save-status" role="status"></p>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <div class="shell">
+        <form id="project-form">
+          <div class="section-num">00 / Het team</div>
+          <h2 class="section-title">Wie zijn jullie?</h2>
+          <div class="field">
+            <label for="studenten">Namen van de studenten <span class="optional">(twee, drie of vier)</span></label>
+            <input id="studenten" name="studenten" type="text" autocomplete="off">
+          </div>
+
+          <div class="form-block">
+          <div class="section-num">01 / De opdracht</div>
+          <h2 class="section-title">Wat gaan jullie bouwen?</h2>
+
+          <div class="field">
+            <label for="opdrachtgever">Naam opdrachtgever</label>
+            <input id="opdrachtgever" name="opdrachtgever" type="text" autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="bedrijf">Naam bedrijf <span class="optional">(eventueel)</span></label>
+            <input id="bedrijf" name="bedrijf" type="text" autocomplete="organization">
+          </div>
+
+          <div class="field">
+            <label for="beschrijving">Korte beschrijving van de opdracht</label>
+            <textarea id="beschrijving" name="beschrijving"></textarea>
+          </div>
+
+          </div>
+
+          <div class="form-block">
+            <div class="section-num">02 / Technische minimumeisen</div>
+            <h2 class="section-title">Hoe voldoen jullie hieraan?</h2>
+            <p class="intro">Schrijf per eis hoe jullie daar tijdens dit project aan gaan voldoen. Wees concreet: noem de gegevens, de schermen en de mensen die het gaan gebruiken.</p>
+
+            <article class="argument">
+              <h3>01 · Database</h3>
+              <p>De applicatie gebruikt een MySQL-database waarin relevante gegevens worden opgeslagen.</p>
+              <div class="field">
+                <label for="eis-database">Hoe gaan jullie hier tijdens dit project aan voldoen?</label>
+                <textarea id="eis-database" name="eis-database"></textarea>
+              </div>
+            </article>
+
+            <article class="argument">
+              <h3>02 · CRUD</h3>
+              <p>Er is functionaliteit om gegevens aan te maken, op te vragen, te bewerken en te verwijderen.</p>
+              <div class="field">
+                <label for="eis-crud">Hoe gaan jullie hier tijdens dit project aan voldoen?</label>
+                <textarea id="eis-crud" name="eis-crud"></textarea>
+              </div>
+            </article>
+
+            <article class="argument">
+              <h3>03 · Contentbeheer</h3>
+              <p>De opdrachtgever kan relevante inhoud of gegevens aanpassen zonder in de code te werken.</p>
+              <div class="field">
+                <label for="eis-content">Hoe gaan jullie hier tijdens dit project aan voldoen?</label>
+                <textarea id="eis-content" name="eis-content"></textarea>
+              </div>
+            </article>
+
+            <article class="argument">
+              <h3>04 · Inlogsysteem</h3>
+              <p>Gebruikers kunnen inloggen en hebben alleen toegang tot onderdelen waarvoor ze rechten hebben.</p>
+              <div class="field">
+                <label for="eis-login">Hoe gaan jullie hier tijdens dit project aan voldoen?</label>
+                <textarea id="eis-login" name="eis-login"></textarea>
+              </div>
+            </article>
+
+            <article class="argument">
+              <h3>05 · JavaScript-component</h3>
+              <p>Ontwikkel minimaal één betekenisvolle interactieve functionaliteit, zoals een kalender, filter, dynamisch formulier, dashboard of drag-and-dropcomponent.</p>
+              <div class="field">
+                <label for="eis-javascript">Hoe gaan jullie hier tijdens dit project aan voldoen?</label>
+                <textarea id="eis-javascript" name="eis-javascript"></textarea>
+              </div>
+            </article>
+
+            <article class="argument">
+              <h3>06 · Security</h3>
+              <p>Houd rekening met veilige authenticatie, autorisatie, invoervalidatie, CSRF-bescherming en veilige omgang met persoonsgegevens.</p>
+              <div class="field">
+                <label for="eis-security">Hoe gaan jullie hier tijdens dit project aan voldoen?</label>
+                <textarea id="eis-security" name="eis-security"></textarea>
+              </div>
+            </article>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn primary" type="submit">Opslaan</button>
+            <button class="btn" type="button" data-print-form>⎙ Print formulier</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="examples" id="voorbeelden">
+      <div class="shell">
+        <div class="section-num">Voorbeelden</div>
+        <h2 class="section-title">Zo kan een ingevuld formulier eruitzien.</h2>
+        <p class="intro">Dit zijn voorbeelden. Gebruik ze als houvast en schrijf jullie eigen opdracht in eigen woorden.</p>
+
+        <article class="example">
+          <h3>Voorbeeld 1 · Garage</h3>
+          <p class="example-note">Een team van twee studenten, met een lokale garage als opdrachtgever.</p>
+          <dl class="filled">
+            <div>
+              <dt>Namen van de studenten</dt>
+              <dd>Lotte Vermeer, Sam de Wit</dd>
+            </div>
+            <div>
+              <dt>Naam opdrachtgever</dt>
+              <dd>Karin Vos</dd>
+            </div>
+            <div>
+              <dt>Naam bedrijf</dt>
+              <dd>Garage De Hoek</dd>
+            </div>
+            <div>
+              <dt>Korte beschrijving</dt>
+              <dd>De garage houdt auto's, diensten en afspraken nu bij in WhatsApp en een schrift. We bouwen een webapplicatie waarin de eigenaar het aanbod beheert en bezoekers een proefrit of onderhoudsafspraak aanvragen.</dd>
+            </div>
+            <div>
+              <dt>01 · Database</dt>
+              <dd>MySQL met tabellen voor auto's, diensten, afspraken en gebruikers. Een auto heeft merk, prijs, status en een foto. Een afspraak hoort bij een auto of een dienst.</dd>
+            </div>
+            <div>
+              <dt>02 · CRUD</dt>
+              <dd>De eigenaar kan auto's en diensten aanmaken, bekijken, wijzigen en verwijderen. Bezoekers maken een afspraak aan. De eigenaar kan die bevestigen of verwijderen.</dd>
+            </div>
+            <div>
+              <dt>03 · Contentbeheer</dt>
+              <dd>In het beheergedeelte past de eigenaar teksten, prijzen en het aanbod aan, zonder in de code te werken.</dd>
+            </div>
+            <div>
+              <dt>04 · Inlogsysteem</dt>
+              <dd>De eigenaar en een monteur loggen in. De eigenaar ziet alles. De monteur ziet alleen de agenda en mag geen prijzen wijzigen. Bezoekers hebben geen account.</dd>
+            </div>
+            <div>
+              <dt>05 · JavaScript-component</dt>
+              <dd>Een filter op merk en prijs, plus een agenda waarop alleen vrije tijdsloten gekozen kunnen worden.</dd>
+            </div>
+            <div>
+              <dt>06 · Security</dt>
+              <dd>Wachtwoorden gehasht, rollen in Laravel, validatie op elk formulier en CSRF op beheeracties. Klantgegevens zijn alleen zichtbaar voor ingelogde medewerkers.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="example">
+          <h3>Voorbeeld 2 · Sportvereniging</h3>
+          <p class="example-note">Een team van drie studenten, met een voetbalvereniging als opdrachtgever.</p>
+          <dl class="filled">
+            <div>
+              <dt>Namen van de studenten</dt>
+              <dd>Noa Bakker, Jesse Visser, Emma Mulder</dd>
+            </div>
+            <div>
+              <dt>Naam opdrachtgever</dt>
+              <dd>Patrick Hendriks</dd>
+            </div>
+            <div>
+              <dt>Naam bedrijf</dt>
+              <dd>Voetbalvereniging De Boog</dd>
+            </div>
+            <div>
+              <dt>Korte beschrijving</dt>
+              <dd>De vereniging wil nieuws, teams en activiteiten op één plek. Leden melden zich aan voor toernooien. Vrijwilligers beheren de inhoud zelf.</dd>
+            </div>
+            <div>
+              <dt>01 · Database</dt>
+              <dd>MySQL voor nieuwsberichten, teams, evenementen, inschrijvingen en gebruikers. Een inschrijving koppelt een lid aan een evenement.</dd>
+            </div>
+            <div>
+              <dt>02 · CRUD</dt>
+              <dd>Redacteuren maken nieuws en evenementen aan, passen ze aan en verwijderen ze. Leden schrijven zich in en kunnen hun eigen inschrijving intrekken.</dd>
+            </div>
+            <div>
+              <dt>03 · Contentbeheer</dt>
+              <dd>Een beheeromgeving voor nieuws, teams en evenementen. De commissie wijzigt dat zelf, zonder een ontwikkelaar.</dd>
+            </div>
+            <div>
+              <dt>04 · Inlogsysteem</dt>
+              <dd>Rollen voor lid, redacteur en beheerder. Een lid ziet eigen inschrijvingen. Een redacteur beheert inhoud. De beheerder beheert ook accounts.</dd>
+            </div>
+            <div>
+              <dt>05 · JavaScript-component</dt>
+              <dd>Een kalenderfilter op team en maand, zodat alleen de relevante trainingen en toernooien zichtbaar zijn.</dd>
+            </div>
+            <div>
+              <dt>06 · Security</dt>
+              <dd>Authenticatie via Laravel, autorisatie per rol, validatie en CSRF. We bewaren alleen de persoonsgegevens die voor een inschrijving nodig zijn.</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <div><strong>CODE FOR REAL</strong> · Software Developer</div>
+      <div><a href="index.html">Projectbriefing</a></div>
+      <div>Real clients. Real challenges. Real code.</div>
+    </div>
+  </footer>
+</body>
+</html>

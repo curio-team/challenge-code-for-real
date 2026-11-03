@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Code for Real: echte opdrachtgevers, echte uitdagingen, echte code. De projectbriefing voor Software Developer studenten.">
+  <title>Challenge: Code For Real — Projectbriefing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell navrow">
+      <a href="#top" class="brand">&lt;CODE <span>FOR REAL</span> /&gt;</a>
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a href="#missie">Missie</a>
+        <a href="#zoeken">Opdrachtgever zoeken</a>
+        <a href="#pitch">Projectvoorstel</a>
+        <a href="#bouwen">Ontwikkeling</a>
+        <a href="#oplevering">Oplevering</a>
+        <a href="invulformulier.html">Invulformulier</a>
+        <a class="nav-cta" href="#faq">FAQ ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="shell">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Software Developer · Projectbriefing</div>
+          <h1><span class="challenge">Challenge:</span><br>CODE<br>FOR <span>REAL.</span></h1>
+          <p class="tagline">Real clients. Real challenges. Real code.</p>
+          <p class="lead">Geen fictieve opdracht, maar een échte opdrachtgever. Vorm je developmentteam, ontdek een probleem en ontwikkel een webapplicatie die ertoe doet.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#missie">Ontdek de missie <span aria-hidden="true">↗</span></a>
+            <a class="btn" href="#zoeken">Start je zoektocht →</a>
+            <button class="btn" id="print-briefing" type="button">⎙ Print briefing</button>
+          </div>
+        </div>
+        <div class="terminal" aria-label="Code for Real in programmeerstijl">
+          <div class="terminal-head"><i></i><i></i><i></i><span>mission.config.js</span></div>
+          <div class="terminal-body">
+            <div class="comment">// This time, it's for real.</div>
+            <div><span class="key">const</span> mission = {</div>
+            <div class="indent">client: <span class="value">"real"</span>,</div>
+            <div class="indent">team: <span class="value">"2-3 developers"</span>,</div>
+            <div class="indent">framework: <span class="value">"Laravel"</span>,</div>
+            <div class="indent">duration: <span class="value">"8 weeks"</span>,</div>
+            <div class="indent">goal: <span class="value">"make an impact"</span></div>
+            <div>};</div>
+            <br>
+            <div><span class="key">build</span>(mission); <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><strong>2–3</strong><span>Studenten per team</span></div>
+        <div class="metric"><strong>8</strong><span>Weken ontwikkeling</span></div>
+        <div class="metric"><strong>Laravel</strong><span>Framework</span></div>
+        <div class="metric"><strong>100%</strong><span>Echte opdracht</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="missie">
+      <div class="shell">
+        <div class="section-num">00 / Het idee</div>
+        <h2 class="section-title">Jullie missie</h2>
+        <div class="prose">
+          <p>Tot nu toe kregen jullie op school meestal een opdracht van een docent. Er was een beschrijving, er waren eisen en jullie gingen aan de slag met het bouwen van de software.</p>
+          <p><strong>Deze keer draaien we het om.</strong></p>
+          <p class="intro highlight">Jullie gaan zelf een opdrachtgever zoeken, zelf ontdekken wat die nodig heeft en zelf een passende webapplicatie ontwikkelen.</p>
+          <p>Misschien heeft de garage om de hoek een verouderde website. Misschien kan jouw sportvereniging wel een systeem gebruiken om activiteiten te beheren. Of misschien ken je iemand met een eigen onderneming die veel administratie nog handmatig doet.</p>
+          <p>Daar liggen kansen. En het is aan jullie om die te ontdekken!</p>
+          <p>Tijdens <em>Code for Real</em> vormen jullie een klein developmentteam. Jullie zijn verantwoordelijk voor het contact met de opdrachtgever, de planning, de ontwikkeling en de uiteindelijke oplevering.</p>
+        </div>
+        <div class="callout"><strong>Het doel?</strong> Na acht weken een werkend product presenteren waar een echte opdrachtgever iets aan heeft.</div>
+      </div>
+    </section>
+
+    <section id="zoeken">
+      <div class="shell">
+        <div class="section-num">01 / Periode 3 · Find your client</div>
+        <h2 class="section-title">Zoek een échte opdrachtgever.</h2>
+        <p class="intro">Jullie eerste uitdaging is het vinden van een echte opdrachtgever. Dat kan iemand zijn die je kent, maar ook een bedrijf of organisatie waar je nog nooit contact mee hebt gehad.</p>
+        <h3 class="subhead">Waar kun je zoeken?</h3>
+        <div class="cards">
+          <article class="card">
+            <div class="symbol">↗</div>
+            <h3>Je eigen netwerk</h3>
+            <p>Familie, vrienden, kennissen, vrienden van vrienden en het netwerk van je ouders.</p>
+          </article>
+          <article class="card">
+            <div class="symbol">⌂</div>
+            <h3>Verenigingen &amp; organisaties</h3>
+            <p>Sportclubs, scoutinggroepen, stichtingen en vrijwilligersorganisaties.</p>
+          </article>
+          <article class="card">
+            <div class="symbol">◈</div>
+            <h3>Ondernemers in de buurt</h3>
+            <p>Lokale winkels, garages, zzp'ers en kleine bedrijven.</p>
+          </article>
+          <article class="card">
+            <div class="symbol">#</div>
+            <h3>Social media</h3>
+            <p>Zoek of plaats een oproep via bijvoorbeeld LinkedIn en Instagram.</p>
+          </article>
+          <article class="card">
+            <div class="symbol">◎</div>
+            <h3>Proactief zoeken</h3>
+            <p>Bekijk bestaande websites van ondernemingen: zijn ze verouderd of slecht bruikbaar op mobiel?</p>
+          </article>
+          <article class="card">
+            <div class="symbol">✳</div>
+            <h3>Een probleem ontdekken</h3>
+            <p>Niet ieder bedrijf weet al wat het nodig heeft. Misschien bedenk jij juist de oplossing.</p>
+          </article>
+        </div>
+        <div class="callout"><strong>Belangrijk:</strong> de opdrachtgever hoeft zelf niet met een uitgewerkt idee te komen. Jullie mogen ook een voorstel doen voor een oplossing.</div>
+        <h3 class="subhead" id="hoe">Hoe kun je zoeken?</h3>
+        <p class="intro">Je hoeft geen perfect verhaal te hebben. Stel een concrete vraag, of stuur een korte mail. Stuur de <a href="opdrachtgever.html">pagina voor opdrachtgevers</a> mee, zodat meteen duidelijk is wat je vraagt.</p>
+        <h3 class="subhead">Zo kun je een gesprek openen</h3>
+        <div class="cards">
+          <article class="card">
+            <div class="symbol">“</div>
+            <h3>Noem de opleiding</h3>
+            <p>Wij zijn studenten Software Developer. We zoeken een echte opdrachtgever voor wie we in acht weken een webapplicatie bouwen. Heb jij een klus die nu te veel tijd kost?</p>
+          </article>
+          <article class="card">
+            <div class="symbol">⌘</div>
+            <h3>Wijs op iets wat je zag</h3>
+            <p>Ik zag dat jullie site lastig te navigeren is, zeker op een telefoon. Zullen we kijken of we daar een betere applicatie voor kunnen maken?</p>
+          </article>
+          <article class="card">
+            <div class="symbol">?</div>
+            <h3>Benoem het handwerk</h3>
+            <p>Jullie plannen nu veel via appjes en Excel. Zou een eenvoudig systeem voor aanvragen of aanmeldingen schelen?</p>
+          </article>
+        </div>
+        <h3 class="subhead">Vragen die het probleem scherp maken</h3>
+        <ul class="checklist">
+          <li>Waar ben je elke week tijd aan kwijt?</li>
+          <li>Wat houd je nu bij op papier, in Excel of in WhatsApp?</li>
+          <li>Wie gaat dit gebruiken: jij, collega's, leden of klanten?</li>
+          <li>Wat moet je zelf kunnen aanpassen, zonder in de code te zitten?</li>
+          <li>Wat zou over acht weken een geslaagd resultaat zijn?</li>
+          <li>Kan ik een kort gesprek met je plannen?</li>
+        </ul>
+        <h3 class="subhead">Standaardmail</h3>
+        <p class="intro">Kopieer deze mail, vul de haakjes in en stuur hem naar een mogelijke opdrachtgever. De link naar de uitleg voor opdrachtgevers staat er al in.</p>
+        <div class="mail">
+          <div class="mail-bar">
+            <p>Onderwerp: <strong>Uitnodiging: opdrachtgever voor studenten Software Developer</strong></p>
+            <button class="btn primary" id="copy-mail" type="button">Kopieer mail</button>
+          </div>
+          <pre id="mail-template" data-subject="Uitnodiging: opdrachtgever voor studenten Software Developer">Beste [naam],
+
+Wij zijn [namen], studenten van de opleiding Software Developer. Voor het project Code for Real zoeken we een echte opdrachtgever.
+
+Met een team van twee of drie studenten bouwen we in acht weken een webapplicatie. Dat kan bijvoorbeeld gaan om afspraken, aanmeldingen, voorraad of inhoud die je nu nog met de hand bijhoudt. We beginnen met een gesprek om te horen waar jij tegenaan loopt.
+
+Meedoen betekent dat je bereikbaar bent voor dat gesprek, voor tussentijdse updates, voor een tussenoplevering op locatie en voor een einddemonstratie.
+
+Het resultaat is een studentenproject: een prototype. Aan het eindproduct kunnen geen rechten worden ontleend. We leveren de applicatie op via hosting en een domein van school of van onszelf. Wil je het later op je eigen server of domein, dan is een webbureau daarvoor de juiste stap.
+
+Op deze pagina lees je precies wat we van een opdrachtgever vragen:
+<span id="client-page-url">opdrachtgever.html</span>
+
+Zou je openstaan voor een kort gesprek? We horen graag van je.
+
+Met vriendelijke groet,
+[namen]
+[telefoon of e-mail]
+Opleiding Software Developer</pre>
+        </div>
+        <p class="intro"><a class="btn" href="opdrachtgever.html">Open de pagina voor opdrachtgevers →</a></p>
+        <h3 class="subhead">Voorbeelden van geschikte projecten</h3>
+        <div class="cards">
+          <article class="card">
+            <h3>Garage of autobedrijf</h3>
+            <p>Een website waarop de garage zelf auto's, diensten en aanbiedingen beheert. Bezoekers vragen een proefrit of afspraak aan.</p>
+          </article>
+          <article class="card">
+            <h3>Sportvereniging</h3>
+            <p>Een website met nieuws, teams en activiteiten. Beheerders passen gegevens aan en leden melden zich aan voor evenementen.</p>
+          </article>
+          <article class="card">
+            <h3>Scoutingvereniging</h3>
+            <p>Een platform voor activiteiten, nieuws en inschrijvingen, inclusief deelnemerslijsten voor begeleiders.</p>
+          </article>
+          <article class="card">
+            <h3>Kapper of schoonheidssalon</h3>
+            <p>Een website met behandelingen, prijzen en een reserveringsfunctie die de eigenaar zelf beheert.</p>
+          </article>
+          <article class="card">
+            <h3>Fotograaf of creatief ondernemer</h3>
+            <p>Een portfolio met projecten, categorieën en een beheergedeelte. Klanten kunnen aanvragen indienen.</p>
+          </article>
+          <article class="card">
+            <h3>Kleine ondernemer</h3>
+            <p>Een dashboard voor klanten, aanvragen, afspraken, voorraad of bestellingen.</p>
+          </article>
+          <article class="card">
+            <h3>Evenementenorganisatie</h3>
+            <p>Een website voor evenementen met registratie, deelnemersbeheer en een overzicht voor de organisator.</p>
+          </article>
+        </div>
+        <p class="intro">Dit zijn voorbeelden. Andere ideeën zijn welkom!</p>
+        <div class="callout blue"><strong>Wat is niet voldoende?</strong> Een eenvoudige statische website met alleen een homepage, een contactpagina en wat foto's is niet uitdagend genoeg. Jullie ontwikkelen een applicatie met database, beheermogelijkheden, gebruikersaccounts en interactieve functionaliteiten. De docent bepaalt of jullie voorstel voldoende uitdaging biedt.</div>
+      </div>
+    </section>
+
+    <section id="pitch">
+      <div class="shell">
+        <div class="section-num">02 / Periode 3 · Pitch your project</div>
+        <h2 class="section-title">Van idee naar projectvoorstel.</h2>
+        <p class="intro">Hebben jullie een opdrachtgever gevonden? Dan gaan jullie onderzoeken wat de klant nodig heeft. Voer een eerste gesprek en probeer duidelijk te krijgen:</p>
+        <ul class="checklist">
+          <li>Wie is de opdrachtgever?</li>
+          <li>Wat doet het bedrijf of de organisatie?</li>
+          <li>Wat is het probleem of de wens?</li>
+          <li>Wie gaat de applicatie gebruiken?</li>
+          <li>Welke functionaliteiten zijn belangrijk?</li>
+          <li>Wat zou een succesvolle oplevering zijn?</li>
+        </ul>
+        <p class="intro">Daarna vullen jullie het document <strong>Projectvoorstel &amp; Goedkeuringschecklist</strong> in. Hierin leggen jullie uit wat jullie gaan bouwen en hoe jullie aan de technische eisen voldoen. De docent beoordeelt of het voorstel geschikt en haalbaar is.</p>
+        <div class="callout"><strong>Go / no-go:</strong> pas na goedkeuring van de docent is het project definitief.</div>
+      </div>
+    </section>
+
+    <section id="bouwen">
+      <div class="shell">
+        <div class="section-num">03 / Periode 4 · Build it for real</div>
+        <h2 class="section-title">Tijd om te bouwen.</h2>
+        <p class="intro">In periode 4 begint de daadwerkelijke ontwikkeling. Jullie hebben hiervoor acht weken.</p>
+        <h3 class="subhead">Randvoorwaarden</h3>
+        <ul class="checklist">
+          <li>Team van 2 of 3 studenten</li>
+          <li>Echte, bereikbare opdrachtgever</li>
+          <li>Een webapplicatie als project</li>
+          <li>Laravel als ontwikkelomgeving</li>
+          <li>MySQL als database</li>
+          <li>Code in een GitHub-repository</li>
+          <li>Kanban-bord voor planning en taken</li>
+        </ul>
+        <h3 class="subhead">Technische minimumeisen</h3>
+        <div class="requirements">
+          <article class="requirement">
+            <h3>01 · Database</h3>
+            <p>De applicatie gebruikt een MySQL-database waarin relevante gegevens worden opgeslagen.</p>
+          </article>
+          <article class="requirement">
+            <h3>02 · CRUD</h3>
+            <p>Er is functionaliteit om gegevens aan te maken, op te vragen, te bewerken en te verwijderen.</p>
+          </article>
+          <article class="requirement">
+            <h3>03 · Contentbeheer</h3>
+            <p>De opdrachtgever kan relevante inhoud of gegevens aanpassen zonder in de code te werken.</p>
+          </article>
+          <article class="requirement">
+            <h3>04 · Inlogsysteem</h3>
+            <p>Gebruikers kunnen inloggen en hebben alleen toegang tot onderdelen waarvoor ze rechten hebben.</p>
+          </article>
+          <article class="requirement">
+            <h3>05 · JavaScript-component</h3>
+            <p>Ontwikkel minimaal één betekenisvolle interactieve functionaliteit, zoals een kalender, filter, dynamisch formulier, dashboard of drag-and-dropcomponent.</p>
+          </article>
+          <article class="requirement">
+            <h3>06 · Security</h3>
+            <p>Houd rekening met veilige authenticatie, autorisatie, invoervalidatie, CSRF-bescherming en veilige omgang met persoonsgegevens.</p>
+          </article>
+        </div>
+        <p class="intro">Heb je een opdracht gevonden? Vul dan het invulformulier in, sla het op of print het uit en bespreek het met je projectdocent.</p>
+        <a class="btn primary" href="invulformulier.html">Invulformulier project →</a>
+        <h3 class="subhead">Planning en samenwerking</h3>
+        <p class="intro">Jullie zijn niet alleen verantwoordelijk voor het programmeren, maar ook voor het projectmanagement.</p>
+        <div class="steps">
+          <div class="step">
+            <p><strong>Intake</strong><br>Voer een intakegesprek met de opdrachtgever en maak duidelijke afspraken over gewenste functionaliteiten.</p>
+          </div>
+          <div class="step">
+            <p><strong>Organiseren</strong><br>Houd alle taken bij op een Kanban-bord en verdeel de werkzaamheden binnen het team.</p>
+          </div>
+          <div class="step">
+            <p><strong>Communiceren</strong><br>Informeer de opdrachtgever minimaal één keer per week over de voortgang.</p>
+          </div>
+          <div class="step">
+            <p><strong>Tussenoplevering</strong><br>Laat in week 4 een werkende tussenversie zien, op locatie bij de opdrachtgever.</p>
+          </div>
+          <div class="step">
+            <p><strong>Eindoplevering</strong><br>Presenteer en demonstreer in week 8 het eindresultaat.</p>
+          </div>
+        </div>
+        <h3 class="subhead">Voorbeeldplanning · 8 weken</h3>
+        <div class="timeline">
+          <article class="week">
+            <div class="num">Week 01</div>
+            <h3>Kick-off &amp; intake</h3>
+            <p>Intake, requirements, ontwerp en projectplanning.</p>
+          </article>
+          <article class="week">
+            <div class="num">Week 02</div>
+            <h3>De basis</h3>
+            <p>Database, Laravel-project en basisstructuur.</p>
+          </article>
+          <article class="week">
+            <div class="num">Week 03</div>
+            <h3>Functionaliteiten</h3>
+            <p>Eerste functionaliteiten en CRUD.</p>
+          </article>
+          <article class="week milestone">
+            <div class="num">Week 04 · Milestone</div>
+            <h3>Tussenoplevering</h3>
+            <p>Werkende versie op locatie tonen en feedback ophalen.</p>
+          </article>
+          <article class="week">
+            <div class="num">Week 05</div>
+            <h3>Verder bouwen</h3>
+            <p>Verdere ontwikkeling en JavaScript-component.</p>
+          </article>
+          <article class="week">
+            <div class="num">Week 06</div>
+            <h3>Beheer &amp; security</h3>
+            <p>Beheer, authenticatie en beveiliging.</p>
+          </article>
+          <article class="week">
+            <div class="num">Week 07</div>
+            <h3>Testen</h3>
+            <p>Verbeteren en oplevering voorbereiden.</p>
+          </article>
+          <article class="week milestone">
+            <div class="num">Week 08 · Milestone</div>
+            <h3>Ship it!</h3>
+            <p>Eindoplevering, demo en presentatie.</p>
+          </article>
+        </div>
+        <p class="intro">Dit is een voorbeeld. Jullie maken zelf een realistische planning die past bij jullie project.</p>
+      </div>
+    </section>
+
+    <section id="oplevering">
+      <div class="shell">
+        <div class="section-num">04 / Week 8 · Ship it!</div>
+        <h2 class="section-title">Laat zien wat je gebouwd hebt.</h2>
+        <p class="intro">Aan het einde van het project laten jullie zien wat jullie hebben ontwikkeld. Jullie demonstreren de applicatie, leggen de belangrijkste technische keuzes uit en vertellen hoe de samenwerking met de opdrachtgever is verlopen. De opdrachtgever krijgt gelegenheid om feedback te geven.</p>
+        <h3 class="subhead">Bij de eindoplevering verwachten we minimaal:</h3>
+        <ul class="checklist">
+          <li>Een werkende webapplicatie</li>
+          <li>Een bijgewerkte GitHub-repository</li>
+          <li>Overzicht van gerealiseerde functionaliteiten</li>
+          <li>Demonstratie van het beheergedeelte</li>
+          <li>Toelichting op technische eisen</li>
+          <li>Korte terugblik op project en samenwerking</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="shell">
+        <div class="section-num">05 / Need to know</div>
+        <h2 class="section-title">Veelgestelde vragen</h2>
+        <div class="faq">
+          <details>
+            <summary>Mag een familielid mijn opdrachtgever zijn?</summary>
+            <p>Ja, zolang er sprake is van een echte behoefte, een serieuze opdracht en een opdrachtgever die actief betrokken is.</p>
+          </details>
+          <details>
+            <summary>Mag ik een bestaande website opnieuw bouwen?</summary>
+            <p>Ja, maar uitsluitend een visuele redesign is niet voldoende. De nieuwe website moet ook voldoen aan de technische minimumeisen.</p>
+          </details>
+          <details>
+            <summary>Mag ik een WordPress-website ontwikkelen?</summary>
+            <p>Nee, het project wordt ontwikkeld met Laravel. WordPress kan wel een bestaande website zijn die jullie gaan vervangen.</p>
+          </details>
+          <details>
+            <summary>Mag ik alleen werken?</summary>
+            <p>Nee, jullie werken in teams van twee of drie studenten.</p>
+          </details>
+          <details>
+            <summary>Moet de opdrachtgever betalen?</summary>
+            <p>Nee. Het project maakt deel uit van jullie opleiding. Een financiële vergoeding is geen voorwaarde.</p>
+          </details>
+          <details>
+            <summary>Moet de website echt online komen?</summary>
+            <p>De applicatie wordt opgeleverd op hosting en een domein van jullie of van school. Het blijft een prototype. Wil de opdrachtgever het op een eigen server of domein, dan neemt die daarvoor contact op met een webbureau.</p>
+          </details>
+          <details>
+            <summary>Wie betaalt een domeinnaam of hosting?</summary>
+            <p>De oplevering loopt via hosting en een domein van de student of van school. Een eigen server of domein van de opdrachtgever hoort niet bij deze opdracht. Studenten zijn niet verplicht dat te regelen of te betalen.</p>
+          </details>
+          <details>
+            <summary>Wat als de opdrachtgever meer wil dan we kunnen maken?</summary>
+            <p>Dan bespreken jullie welke functies prioriteit hebben. Liever een kleiner, goed werkend product dan een grote applicatie die niet afkomt.</p>
+          </details>
+          <details>
+            <summary>Wat als de opdrachtgever nauwelijks reageert?</summary>
+            <p>Probeer eerst zelf contact te leggen. Informeer daarna tijdig je docent. Wacht niet tot het einde van het project.</p>
+          </details>
+          <details>
+            <summary>Mag ik AI gebruiken tijdens het ontwikkelen?</summary>
+            <p>Ja, als hulpmiddel bij het leren, onderzoeken en programmeren, binnen de afspraken van de opleiding. Jullie blijven verantwoordelijk voor de code en moeten kunnen uitleggen hoe deze werkt.</p>
+          </details>
+          <details>
+            <summary>Wat als we geen opdrachtgever kunnen vinden?</summary>
+            <p>Bespreek dit ruim vóór het einde van periode 3 met je docent. De zoektocht naar een opdrachtgever is een belangrijk onderdeel van de opdracht.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="finish">
+    <div class="shell">
+      <div class="section-num">De laatste woorden</div>
+      <h2 class="quote">Find a client.<br>Build a solution.<br><span>Make it real.</span></h2>
+      <p>Dit project is jullie kans om te ervaren hoe softwareontwikkeling buiten school werkt. Niet alles zal vanzelf gaan. Klanten veranderen soms van mening, planningen lopen uit en bugs verschijnen op de slechtste momenten.</p>
+      <p>Dat hoort erbij. Jullie gaan niet alleen leren hoe je software bouwt, maar ook hoe je samen met anderen een écht probleem oplost.</p>
+      <a href="#top" class="btn primary">Terug naar boven ↑</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="shell">
+      <div><strong>CODE FOR REAL</strong> · Software Developer</div>
+      <div><a href="opdrachtgever.html">Voor opdrachtgevers</a></div>
+      <div>Real clients. Real challenges. Real code.</div>
+    </div>
+  </footer>
+</body>
+</html>
