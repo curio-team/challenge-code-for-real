@@ -24,6 +24,10 @@ if (projectForm) {
       if (names.length) data.studenten = names.join(", ");
     }
 
+    if (typeof data.probleem !== "string" && typeof data.beschrijving === "string") {
+      data.probleem = data.beschrijving;
+    }
+
     fields.forEach((field) => {
       if (typeof data[field.name] === "string") {
         field.value = data[field.name];
@@ -94,10 +98,11 @@ if (printButton) {
   });
 }
 
+const publishedSite = "https://curio-team.github.io/challenge-code-for-real/";
 const clientPageUrl = document.getElementById("client-page-url");
 
 if (clientPageUrl) {
-  clientPageUrl.textContent = new URL("opdrachtgever.html", window.location.href).href;
+  clientPageUrl.textContent = new URL("opdrachtgever.html", publishedSite).href;
 }
 
 const copyMailButton = document.getElementById("copy-mail");

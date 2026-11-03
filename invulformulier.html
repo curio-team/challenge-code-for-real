@@ -52,28 +52,62 @@
           </div>
 
           <div class="form-block">
-          <div class="section-num">01 / De opdracht</div>
-          <h2 class="section-title">Wat gaan jullie bouwen?</h2>
+            <div class="section-num">01 / De opdrachtgever</div>
+            <h2 class="section-title">Wie is de opdrachtgever?</h2>
 
-          <div class="field">
-            <label for="opdrachtgever">Naam opdrachtgever</label>
-            <input id="opdrachtgever" name="opdrachtgever" type="text" autocomplete="name">
-          </div>
+            <div class="field">
+              <label for="opdrachtgever">Naam opdrachtgever</label>
+              <input id="opdrachtgever" name="opdrachtgever" type="text" autocomplete="name">
+            </div>
 
-          <div class="field">
-            <label for="bedrijf">Naam bedrijf <span class="optional">(eventueel)</span></label>
-            <input id="bedrijf" name="bedrijf" type="text" autocomplete="organization">
-          </div>
+            <div class="field">
+              <label for="telefoon">Telefoon opdrachtgever</label>
+              <input id="telefoon" name="telefoon" type="tel" autocomplete="off" inputmode="tel">
+            </div>
 
-          <div class="field">
-            <label for="beschrijving">Korte beschrijving van de opdracht</label>
-            <textarea id="beschrijving" name="beschrijving"></textarea>
-          </div>
+            <div class="field">
+              <label for="email">E-mail opdrachtgever</label>
+              <input id="email" name="email" type="email" autocomplete="off" inputmode="email">
+            </div>
 
+            <div class="field">
+              <label for="bedrijf">Naam bedrijf of organisatie <span class="optional">(eventueel)</span></label>
+              <input id="bedrijf" name="bedrijf" type="text" autocomplete="organization">
+            </div>
+
+            <div class="field">
+              <label for="organisatie">Wat doet het bedrijf of de organisatie?</label>
+              <textarea id="organisatie" name="organisatie"></textarea>
+            </div>
           </div>
 
           <div class="form-block">
-            <div class="section-num">02 / Technische minimumeisen</div>
+            <div class="section-num">02 / De opdracht</div>
+            <h2 class="section-title">Wat gaan jullie bouwen?</h2>
+
+            <div class="field">
+              <label for="probleem">Wat is het probleem of de wens?</label>
+              <textarea id="probleem" name="probleem"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="gebruikers">Wie gaat de applicatie gebruiken?</label>
+              <textarea id="gebruikers" name="gebruikers"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="functionaliteiten">Welke functionaliteiten zijn belangrijk?</label>
+              <textarea id="functionaliteiten" name="functionaliteiten"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="geslaagd">Wat zou een succesvolle oplevering zijn?</label>
+              <textarea id="geslaagd" name="geslaagd"></textarea>
+            </div>
+          </div>
+
+          <div class="form-block">
+            <div class="section-num">03 / Technische minimumeisen</div>
             <h2 class="section-title">Hoe voldoen jullie hieraan?</h2>
             <p class="intro">Schrijf per eis hoe jullie daar tijdens dit project aan gaan voldoen. Wees concreet: noem de gegevens, de schermen en de mensen die het gaan gebruiken.</p>
 
@@ -159,12 +193,36 @@
               <dd>Karin Vos</dd>
             </div>
             <div>
-              <dt>Naam bedrijf</dt>
+              <dt>Telefoon opdrachtgever</dt>
+              <dd>06 12 34 56 78</dd>
+            </div>
+            <div>
+              <dt>E-mail opdrachtgever</dt>
+              <dd>karin@garagedehoek.nl</dd>
+            </div>
+            <div>
+              <dt>Naam bedrijf of organisatie</dt>
               <dd>Garage De Hoek</dd>
             </div>
             <div>
-              <dt>Korte beschrijving</dt>
-              <dd>De garage houdt auto's, diensten en afspraken nu bij in WhatsApp en een schrift. We bouwen een webapplicatie waarin de eigenaar het aanbod beheert en bezoekers een proefrit of onderhoudsafspraak aanvragen.</dd>
+              <dt>Wat doet het bedrijf of de organisatie?</dt>
+              <dd>Een lokale garage. Karin verkoopt occasions en doet onderhoud en reparaties.</dd>
+            </div>
+            <div>
+              <dt>Wat is het probleem of de wens?</dt>
+              <dd>Auto's, diensten en afspraken staan nu in WhatsApp en een schrift. Bezoekers kunnen online geen proefrit of onderhoud aanvragen.</dd>
+            </div>
+            <div>
+              <dt>Wie gaat de applicatie gebruiken?</dt>
+              <dd>Bezoekers die een auto of afspraak zoeken, eigenaar Karin en een monteur.</dd>
+            </div>
+            <div>
+              <dt>Welke functionaliteiten zijn belangrijk?</dt>
+              <dd>Aanbod en prijzen beheren, een proefrit of onderhoudsafspraak aanvragen, en een agenda met alleen vrije tijdsloten.</dd>
+            </div>
+            <div>
+              <dt>Wat zou een succesvolle oplevering zijn?</dt>
+              <dd>Karin beheert het aanbod zelf en een bezoeker vraagt online een proefrit of onderhoudsafspraak aan.</dd>
             </div>
             <div>
               <dt>01 · Database</dt>
@@ -206,12 +264,36 @@
               <dd>Patrick Hendriks</dd>
             </div>
             <div>
-              <dt>Naam bedrijf</dt>
+              <dt>Telefoon opdrachtgever</dt>
+              <dd>06 98 76 54 32</dd>
+            </div>
+            <div>
+              <dt>E-mail opdrachtgever</dt>
+              <dd>patrick@vvdeboog.nl</dd>
+            </div>
+            <div>
+              <dt>Naam bedrijf of organisatie</dt>
               <dd>Voetbalvereniging De Boog</dd>
             </div>
             <div>
-              <dt>Korte beschrijving</dt>
-              <dd>De vereniging wil nieuws, teams en activiteiten op één plek. Leden melden zich aan voor toernooien. Vrijwilligers beheren de inhoud zelf.</dd>
+              <dt>Wat doet het bedrijf of de organisatie?</dt>
+              <dd>Een amateurvoetbalvereniging met meerdere teams, trainingen en toernooien. Vrijwilligers regelen de communicatie.</dd>
+            </div>
+            <div>
+              <dt>Wat is het probleem of de wens?</dt>
+              <dd>Nieuws, teams en activiteiten staan verspreid over appjes en losse documenten. Leden kunnen zich niet zelf aanmelden voor een toernooi.</dd>
+            </div>
+            <div>
+              <dt>Wie gaat de applicatie gebruiken?</dt>
+              <dd>Leden, redacteuren van de commissie en een beheerder.</dd>
+            </div>
+            <div>
+              <dt>Welke functionaliteiten zijn belangrijk?</dt>
+              <dd>Nieuws, teams en evenementen beheren, inschrijven voor een toernooi, en een kalender per team.</dd>
+            </div>
+            <div>
+              <dt>Wat zou een succesvolle oplevering zijn?</dt>
+              <dd>Een lid schrijft zich in voor een toernooi en een vrijwilliger past het nieuws zelf aan, zonder een ontwikkelaar.</dd>
             </div>
             <div>
               <dt>01 · Database</dt>
