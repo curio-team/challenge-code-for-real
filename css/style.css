@@ -137,6 +137,27 @@ button {
     radial-gradient(ellipse 40% 60% at 12% 20%, rgba(185, 255, 100, .08), transparent 70%);
 }
 
+.hero-video {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  pointer-events: none;
+}
+
+.hero:has(.hero-video) {
+  background: #090e1b url("../images/banner.jpg") center 28% / cover no-repeat;
+}
+
+.hero:has(.hero-video):before {
+  background:
+    linear-gradient(90deg, rgba(9, 14, 27, .9) 0%, rgba(9, 14, 27, .72) 46%, rgba(9, 14, 27, .48) 100%),
+    linear-gradient(180deg, rgba(9, 14, 27, .25), rgba(9, 14, 27, .62));
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
@@ -951,8 +972,13 @@ main section {
     padding: 35px 0;
   }
 
-  .hero:before {
+  .hero:before,
+  .hero-video {
     display: none;
+  }
+
+  .hero:has(.hero-video) {
+    background-image: none;
   }
 
   .hero-grid {
@@ -1113,5 +1139,9 @@ main section {
 
   .cursor {
     animation: none;
+  }
+
+  .hero-video {
+    display: none;
   }
 }
